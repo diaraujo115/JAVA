@@ -1,4 +1,3 @@
-
 package testaconta;
 
 
@@ -8,15 +7,15 @@ public class TestaConta {
     public static void main(String[] args) {
        //Criando objetos da classe Conta
         Conta referencia = new Conta();
-        referencia.saldo = 1000.0;
-        referencia.limite = 500.0;
-        referencia.numero = 1; 
+            referencia.saldo = 1000.0;
+            referencia.limite = 500.0;
+            referencia.numero = 1; 
 
-        System.out.println(referencia.saldo);
-        System.out.println(referencia.limite);
-        System.out.println(referencia.numero);
+            System.out.println(referencia.saldo);
+            System.out.println(referencia.limite);
+            System.out.println(referencia.numero);
         
-         System.out.println(" ");
+            System.out.println(" ");
 
        
         
@@ -73,27 +72,28 @@ public class TestaConta {
                   
         CartaoDeCredito cdc =  new CartaoDeCredito();
         Cliente c = new Cliente();
-        cdc.cliente=c;
+            cdc.cliente=c;
         
-        cdc.cliente.nome ="Maria da Silva";
-        cdc.cliente.codigo=453;
+            cdc.cliente.nome ="Maria da Silva";
+            cdc.cliente.codigo=453;
         
-        System.out.println("Nome do Cliente: " + cdc.cliente.nome);
-        System.out.println("Codigo do Cliente: " +cdc.cliente.codigo);
+            System.out.println("Nome do Cliente: " + cdc.cliente.nome);
+            System.out.println("Codigo do Cliente: " +cdc.cliente.codigo);
         
-        System.out.println(" ");
+            System.out.println(" ");
 
-        
+      //Criando um relacionamento entre objetos da classe Agencia e da classe Conta
+  
         
         Conta cont =  new Conta();
         Agencia a = new Agencia();
-        cont.agencia=a;
+            cont.agencia=a;
         
-        cont.agencia.numero =3213555;
-        cont.agencia.uf="RJ";
+            cont.agencia.numero =3213555;
+            cont.agencia.uf="RJ";
         
-        System.out.println("Numero da Agência: " + cont.agencia.numero);
-        System.out.println("UF da agência: " +cont.agencia.uf);
+            System.out.println("Numero da Agência: " + cont.agencia.numero);
+            System.out.println("UF da agência: " +cont.agencia.uf);
     }
     
 }
