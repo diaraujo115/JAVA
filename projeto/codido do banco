@@ -1,0 +1,19 @@
+CREATE DATABASE ComissaoVendas;
+
+USE ComissaoVendas;
+
+CREATE TABLE Vendedor (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    cpf VARCHAR(11) NOT NULL UNIQUE,
+    salario DOUBLE NOT NULL,
+    comissao DOUBLE NOT NULL
+);
+
+CREATE TABLE Venda (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nomeVeiculo VARCHAR(255) NOT NULL,
+    valor DOUBLE NOT NULL,
+    vendedorId INT,
+    FOREIGN KEY (vendedorId) REFERENCES Vendedor(id)
+);
